@@ -4,7 +4,7 @@ name: hb-whoami-b
 services:
   hb-whoami-b:
     container_name: hb-whoami-b
-    image: traefik/whoami:v1.11.0
+    image: traefik/whoami:v1.12.0
     ports:
       - target: 80
         published: "8302"
@@ -12,7 +12,7 @@ services:
     restart: unless-stopped
 x-casaos:
   id: fr.hubert.whoami-b
-  version: 1.11.0
+  version: 1.12.0
   architectures:
     - amd64
   main: hb-whoami-b
