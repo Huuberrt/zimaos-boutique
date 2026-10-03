@@ -1,15 +1,15 @@
 # Boutique ZimaOS de Hubert
 
-Source d'applications ajoutée à ZimaOS (format des boutiques tierces :
-`Apps/<Nom>/docker-compose.yml`, identifiant = `name:`). Elle sert à :
+Boutique d'applications pour le NAS (ZimaOS 1.7) : annoncer dans ZimaOS les
+mises à jour des applications suivies, et proposer des applications à essayer.
 
-- annoncer dans ZimaOS les mises à jour des applications du NAS ;
-- proposer des applications à essayer.
+**Public : n'y mettre aucun secret.**
 
-**Public : n'y mettre aucun secret.** Lors d'une mise à jour, ZimaOS garde le
-Compose installé sur le NAS et ne prend à la fiche que l'image.
+Les fiches sources sont dans `Apps/<Nom>/docker-compose.yml` (bloc `x-casaos`,
+avec `id` et `version`). À chaque push sur `main`, le workflow
+`.github/workflows/publier.yml` les transforme au format v2 de ZimaOS avec
+`IceWhaleTech/build-appstore-action` et publie le résultat sur GitHub Pages.
 
-Contexte et décisions : dépôt `nas-zimaos`, chantier 24.
+Adresse à déclarer dans ZimaOS (boutique communautaire, bouton +) :
 
-Adresse à déclarer dans ZimaOS :
-`https://github.com/Huuberrt/zimaos-boutique/archive/refs/heads/main.zip`
+    https://huuberrt.github.io/zimaos-boutique/store.json

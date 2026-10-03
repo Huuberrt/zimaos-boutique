@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "store_id": "hubert-boutique",
+  "name": {
+    "en_US": "Boutique de Hubert"
+  },
+  "description": {
+    "en_US": "Applications suivies et essais d'applications de Hubert."
+  },
+  "maintainer": "Huuberrt",
+  "url": "https://github.com/Huuberrt/zimaos-boutique"
+}
