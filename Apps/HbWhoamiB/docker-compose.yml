@@ -1,0 +1,30 @@
+# Application jetable de l'essai (chantier 24 de nas-zimaos) : vérifier que
+# ZimaOS détecte et applique une mise à jour proposée par cette boutique.
+name: hb-whoami-b
+services:
+  hb-whoami-b:
+    container_name: hb-whoami-b
+    image: traefik/whoami:v1.11.0
+    ports:
+      - target: 80
+        published: "8302"
+        protocol: tcp
+    restart: unless-stopped
+x-casaos:
+  architectures:
+    - amd64
+  main: hb-whoami-b
+  author: Hubert
+  developer: traefik
+  category: Hubert
+  description:
+    en_us: Page de test qui affiche les informations de la requête.
+  tagline:
+    en_us: Application d'essai de la boutique.
+  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/OpenSpeedTest/icon.png
+  index: /
+  port_map: "8302"
+  scheme: http
+  store_app_id: hb-whoami-b
+  title:
+    en_us: Whoami B (essai, rattachement)
