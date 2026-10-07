@@ -13,3 +13,8 @@ avec `id` et `version`). À chaque push sur `main`, le workflow
 Adresse à déclarer dans ZimaOS (boutique communautaire, bouton +) :
 
     https://huuberrt.github.io/zimaos-boutique/store.json
+
+Aucune fiche pour l'instant : les deux fiches whoami de l'essai du chantier 24
+(`nas-zimaos`) ont été retirées le 2026-10-07. Une boutique vide reste publiée ;
+si la génération refuse un `Apps/` vide, le workflow échoue et la dernière
+version publiée reste en ligne.
