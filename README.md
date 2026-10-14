@@ -14,7 +14,9 @@ Adresse à déclarer dans ZimaOS (boutique communautaire, bouton +) :
 
     https://huuberrt.github.io/zimaos-boutique/store.json
 
-Aucune fiche pour l'instant : les deux fiches whoami de l'essai du chantier 24
-(`nas-zimaos`) ont été retirées le 2026-10-07. Une boutique vide reste publiée ;
-si la génération refuse un `Apps/` vide, le workflow échoue et la dernière
-version publiée reste en ligne.
+**En archive depuis le 2026-10-14** (décision de Hubert) : publication sur
+GitHub Pages coupée, dépôt archivé sur GitHub. La génération refusait le
+dossier `Apps/` vide (workflow en échec depuis le 2026-10-07), si bien que la
+boutique publiée annonçait encore les deux fiches whoami de l'essai du
+chantier 24 (`nas-zimaos`). Elle n'était déclarée dans aucun ZimaOS. Projet
+pour plus tard : voir `ETAT.md`.
